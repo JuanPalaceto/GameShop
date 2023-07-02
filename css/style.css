@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #222222;
+}
+.navbar nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.logo img {
+  width: 120%;
+}
+
+.links {
+  display: none;
+}
+
+.carrito {
+  display: none;
+}
+
+.menu-movil {
+  position: relative;
+  top: 3px;
+}
+
+.banner {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+}
+.banner div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 5vw;
+}
+.banner h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+.banner h2 span {
+  color: #d01418;
+}
+.banner button {
+  background-color: #d01418;
+  border-radius: 5px;
+  border: solid 3px #d01418;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.8rem 4rem;
+  transition: background-color 0.4s ease-in-out;
+}
+.banner button:hover {
+  background-color: transparent;
+}
+
+.main-content {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+}
+.main-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 2rem 0;
+}
+.main-content p {
+  margin: 0;
+}
+
+.productos-destacados {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.productos-destacados > div:nth-of-type(-n+3) {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-card {
+  border-bottom: 1px solid #c8c8c8;
+  padding: 2rem 3.5rem;
+}
+
+.bottom-card {
+  text-align: left;
+  padding: 1.5rem;
+}
+.bottom-card p:first-child {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+.bottom-card p:nth-child(2) {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+.bottom-card p:last-child {
+  color: #88b53f;
+  font-size: 0.7rem;
+  margin-top: 0.1rem;
+}
+
+.productos-estrellas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 6rem;
+}
+.productos-estrellas div {
+  margin: 0 auto;
+  max-width: 300px;
+  position: relative;
+}
+.productos-estrellas img {
+  border-radius: 5px;
+  width: 100%;
+}
+.productos-estrellas p {
+  color: #ffffff;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer {
+  align-items: center;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 0 1rem;
+}
+
+.redes p {
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.redes div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy {
+  background-color: #c4c4c4;
+}
+.copy p {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .links {
+    display: block;
+    margin-left: auto;
+  }
+  .links ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+  }
+  .links ul li {
+    position: relative;
+  }
+  .links ul li a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .links ul li::before {
+    border-bottom: 2px solid #ffffff;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    bottom: -5px;
+    position: absolute;
+    transition: width 0.3s ease-in;
+    width: 0;
+  }
+  .links ul li:hover::before {
+    width: 100%;
+  }
+  .carrito {
+    display: block;
+    margin-left: 3rem;
+  }
+  .menu-movil {
+    display: none;
+  }
+  .productos-destacados {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .productos-estrellas {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .productos-estrellas div {
+    margin: 0;
+    max-width: 330px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+  }
+  .redes p {
+    margin: 0 0 1rem 0;
+  }
+  .redes div {
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
